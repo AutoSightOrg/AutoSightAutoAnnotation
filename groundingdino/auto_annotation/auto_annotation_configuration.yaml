@@ -1,0 +1,20 @@
+# Auto-Annotation by Grounding Dino and YoloV8 - auto_annotation_configuration.yaml
+# =================================================================================
+
+# Google Drive
+google_drive_path: ""
+
+# Roboflow
+roboflow_workspace: "" # workspace name on roboflow
+roboflow_project: "" # project name on roboflow
+roboflow_dataset_version_for_download: 1 # dataset version number for download
+
+# Kaggle
+kaggle_dataset: "" # kaggle dataset name
+kaggle_dataset_zip: "" # downloaded zip name
+kaggle_api_key_path: "" # path to kaggle user api key json file
+kaggle_metadata_path: "" # path to metadata file for upload
+auto_annotateable_images_directory: ""
+
+# YOLO model
+yolo_model_path: "" # path to model .pt file
