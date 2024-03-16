@@ -1,0 +1,36 @@
+# Train by YoloV8 - train_configuration.yaml
+# ===========================================
+
+# Google Drive
+google_drive_path: ""
+
+# Kaggle
+kaggle_dataset: "" # kaggle dataset name
+kaggle_dataset_zip: "" # downloaded zip name
+kaggle_api_key_path: "" # path to kaggle user api key json file
+
+# Yolo basic configuration
+project: "" # project path to save results
+name: "" # name within project
+
+# Default train parameters
+epochs: 50
+patience: 100
+batch: 32
+save_period: 25
+amp: True
+freeze: 0
+plots: True
+hsv_h: 0.1
+hsv_s: 0.1
+hsv_v: 0.1
+degrees: 10
+translate: 0.01
+scale: 0
+shear: 0
+perspective: 0
+flipud: 0
+fliplr: 0
+mosaic: 0
+mixup: 0
+copy_paste: 0
