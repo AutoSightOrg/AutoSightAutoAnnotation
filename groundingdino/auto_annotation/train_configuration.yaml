@@ -34,3 +34,4 @@ fliplr: 0
 mosaic: 0
 mixup: 0
 copy_paste: 0
+sequential_data_oversampling: False
