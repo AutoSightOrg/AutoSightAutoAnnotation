@@ -1,0 +1,11 @@
+# Dataset split - dataset_split_configuration.yaml
+# =================================================
+
+# Google Drive
+google_drive_path: ""
+
+# Kaggle
+kaggle_dataset: "" # kaggle dataset name
+kaggle_dataset_zip: "" # downloaded zip name
+kaggle_api_key_path: "" # path to kaggle user api key json file
+kaggle_metadata_path: "" # path to metadata file for upload
