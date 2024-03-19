@@ -13,19 +13,26 @@ kaggle_api_key_path: "" # path to kaggle user api key json file
 project: "" # project path to save results
 name: "" # name within project
 
-# Default train parameters
-epochs: 50
-patience: 40
-batch: 32
-save_period: 25
-amp: True
-freeze: 0
-fraction: 1.0
-sequential_data_oversampling: False
+# Default parameters
+# ==================
+# Train
+epochs: 300 # total number of training epochs
+patience: 100 # number of epochs to wait without improvement in validation metrics before early stopping the training
+batch: 32 # batch size for training, indicating how many images are processed before the model's internal parameters are updated
+save_period: 25 # frequency of saving model checkpoints, specified in epochs
+amp: True # enables Automatic Mixed Precision (AMP) training, reducing memory usage and possibly speeding up training with minimal impact on accuracy
+fraction: 1.0 # specifies the fraction of the dataset to use for training
+freeze: 0 # freezes the first N layers of the model or specified layers by index, reducing the number of trainable parameters
+sequential_data_oversampling: False # sequential data class oversampling on train data
+verbose: True # enables verbose output during training, providing detailed logs and progress updates
+label_smoothing: 0.0 # applies label smoothing, softening hard labels to a mix of the target label and a uniform distribution over labels, can improve generalization
+dropout: 0.0 # dropout rate for regularization, preventing overfitting by randomly omitting units during training
 plots: True
-hsv_h: 0.1
-hsv_s: 0.1
-hsv_v: 0.1
+
+# Augmentations
+hsv_h: 0.1 # hue (color variability)
+hsv_s: 0.1 # saturation (intensity of colors)
+hsv_v: 0.1 # value (brightness)
 degrees: 10
 translate: 0.01
 scale: 0
