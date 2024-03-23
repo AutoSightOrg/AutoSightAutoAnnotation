@@ -18,3 +18,4 @@ auto_annotateable_images_directory: ""
 
 # YOLO model
 yolo_model_path: "" # path to model .pt file
+yolo_model_version: "" # model's version
